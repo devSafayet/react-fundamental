@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Menubar from './Components/Menubar/Menubar';
+import AllFoducts from './Components/AllFoducts/AllFoducts';
+import { useState } from 'react';
 
 function App() {
+  const [Count, setCount] = useState(0);
+  const setCardCount = () => {
+    setCount(Count + 1);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menubar Count={Count}></Menubar>
+      <AllFoducts setCardCount={setCardCount}></AllFoducts>
+
     </div>
   );
 }
-
 export default App;
