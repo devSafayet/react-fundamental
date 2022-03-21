@@ -1,0 +1,42 @@
+
+.form-area{
+    width: 550px;
+    margin: 0 auto;
+}
+
+.form-area input{
+    height: 50px;
+    border: 2px solid #e67e22;
+    margin-bottom: 20px;
+}
+
+.form-area textarea{
+    height: 150px;
+    border: 2px solid #e67e22;
+}
+
+input.form-control:focus, textarea.form-control:focus {
+    border: 2px solid #e67e22;
+    box-shadow: none;
+}
+
+.mailBtn{
+    border: none;
+    margin-top: 20px;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 7px;
+    font-size: 18px;
+    transition: .4s;
+}
+
+.mailBtn:hover{
+    background-color: #e74c3c;
+}
+
+@media only screen and (max-width: 575px) {
+    .form-area{
+        width: 100%;
+    }
+}

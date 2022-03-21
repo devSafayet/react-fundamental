@@ -1,0 +1,13 @@
+
+
+.blogBtn{
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+.blogBtn:hover{
+    background-color: #e74c3c;
+}
